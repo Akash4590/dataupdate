@@ -1,0 +1,29 @@
+Here i import this file to another file you can use it by importing or use it in  main file..
+
+import React from "react";
+
+class About extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      data: "akash"
+    };
+  }
+
+  apple() {
+    this.setState({
+      data: "khan"
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.data}</h1>
+        <button onClick={() => this.apple()}>update data</button>
+      </div>
+    );
+  }
+}
+
+export default About;
